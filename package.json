@@ -1,0 +1,48 @@
+{
+  "name": "@slurmio/webterm-widget",
+  "version": "0.1.0",
+  "description": "Vue 3 SSH Terminal component",
+  "keywords": [
+    "vue",
+    "ssh",
+    "terminal",
+    "xterm",
+    "webterm"
+  ],
+  "type": "module",
+  "main": "./dist/webterm-widget.umd.js",
+  "module": "./dist/webterm-widget.js",
+  "exports": {
+    ".": {
+      "import": "./dist/webterm-widget.js",
+      "require": "./dist/webterm-widget.umd.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch"
+  },
+  "license": "AGPL-3.0-only",
+  "dependencies": {
+    "@noble/ciphers": "^2.1.1",
+    "@noble/hashes": "^2.0.1",
+    "@xterm/addon-fit": "^0.11.0",
+    "@xterm/addon-web-links": "^0.12.0",
+    "@xterm/xterm": "^6.0.0",
+    "iconv-lite": "^0.7.2"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.3",
+    "vite": "^5.0.11",
+    "vite-plugin-node-polyfills": "^0.25.0",
+    "vue": "^3.4.21"
+  }
+}
